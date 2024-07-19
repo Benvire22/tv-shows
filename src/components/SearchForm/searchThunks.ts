@@ -1,6 +1,6 @@
 import {createAsyncThunk} from "@reduxjs/toolkit";
 import {AppDispatch, RootState} from "../../app/store";
-import {ShowInfo} from "../../types";
+import {Show} from "../../types";
 import axiosApi from "../../axiosApi";
 import {updateShows} from "../../store/searchSlice";
 
@@ -9,7 +9,7 @@ export const getInfo = createAsyncThunk<void, void, { state: RootState, dispatch
     async (_, thunkAPI) => {
         const value = thunkAPI.getState().search.searchValue;
 
-        const {data: response} = await axiosApi.get<ShowInfo[]>(`/shows?q=${value}`);
+        const {data: response} = await axiosApi.get<Show[]>(`/search/shows?q=${value}`);
 
         if (!response) {
             thunkAPI.getState().search.shows = [];
@@ -18,7 +18,7 @@ export const getInfo = createAsyncThunk<void, void, { state: RootState, dispatch
         const newShows = response.map((show) => {
             return show;
         });
+
         thunkAPI.dispatch(updateShows(newShows));
-        console.log(thunkAPI.getState().search.shows);
     }
 );

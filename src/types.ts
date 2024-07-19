@@ -1,5 +1,5 @@
 
-export interface Show {
+export interface ShowInfo {
     id: number;
     url: string;
     name: string;
@@ -14,7 +14,7 @@ export interface Show {
     officialSite: string,
 }
 
-export interface ShowInfo {
+export interface Show {
     score: number;
-    show: Show,
+    show: ShowInfo,
 }
