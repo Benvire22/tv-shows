@@ -1,0 +1,70 @@
+
+.ShowBlock {
+    width: 1280px;
+    display: flex;
+    border: 1px solid red;
+    padding: 20px 30px;
+    margin: 40px auto;
+    gap: 40px;
+}
+
+.show-image {
+    width: 30%;
+}
+
+.show-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.Show-info {
+    width: 70%;
+    border-left: 1px solid red;
+    padding-left: 40px;
+}
+
+.Show-info-top {
+    width: 100%;
+    border-bottom: 1px solid red;
+    margin-bottom: 20px;
+}
+
+.Show-title {
+    font-size: 45px;
+    margin-top: 0;
+    color: #504c4c;
+}
+
+.Show-rating {
+    color: #4b4e7f;
+    font-size: 25px;
+}
+
+.Show-period {
+    font-size: 20px;
+    color: #504c4c;
+}
+
+.Show-info-content {
+    border-bottom: 1px solid red;
+}
+
+.Show-language {
+    color: #373b68;
+    font-size: 22px;
+}
+
+.Show-genres {
+    font-size: 19px;
+}
+
+.Show-weight {
+    font-size: 20px;
+    color: #302c2c;
+}
+
+.Show-runtime {
+    font-size: 20px;
+    color: #302c2c;
+}

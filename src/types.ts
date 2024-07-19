@@ -1,3 +1,11 @@
+export interface ImageShow {
+    medium: string;
+    original: string;
+}
+
+export interface ShowRating {
+    average: string;
+}
 
 export interface ShowInfo {
     id: number;
@@ -9,9 +17,13 @@ export interface ShowInfo {
     status: string;
     runtime: number;
     averageRuntime: number;
+    weight: number;
     premiered: string;
     ended: string;
     officialSite: string,
+    image: ImageShow;
+    rating: ShowRating;
+    summary: string;
 }
 
 export interface Show {

@@ -8,7 +8,9 @@ const Layout: React.FC<React.PropsWithChildren> = ({children}) => {
             <header>
                 <SearchForm />
             </header>
-            {children}
+            <main>
+                {children}
+            </main>
         </div>
     );
 };

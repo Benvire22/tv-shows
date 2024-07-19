@@ -71,3 +71,4 @@ export const {
 export const selectValue = (state: RootState) => state.search.searchValue;
 export const selectShows = (state: RootState) => state.search.shows;
 export const selectCurrentShow = (state: RootState) => state.search.currentShow;
+export const selectLoading = (state: RootState) => state.search.currentShowLoading;

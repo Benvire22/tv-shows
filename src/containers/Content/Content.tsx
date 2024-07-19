@@ -2,13 +2,13 @@ import {useParams} from "react-router-dom";
 import {useCallback, useEffect} from "react";
 import {useAppDispatch, useAppSelector} from "../../app/hooks";
 import {getCurrentShow} from "./currentShowThunk";
-import {selectCurrentShow} from "../../store/searchSlice";
 import ShowBlock from "../../components/ShowBlock/ShowBlock";
+import {selectLoading} from "../../store/searchSlice";
 
 const Content = () => {
     const {showId} = useParams();
     const dispatch = useAppDispatch();
-    const currentShow = useAppSelector(selectCurrentShow);
+    const loading = useAppSelector(selectLoading);
 
     const getShow = useCallback(async () => {
         if (showId !== undefined) {
@@ -21,10 +21,11 @@ const Content = () => {
     }, [getShow]);
 
 
-    return currentShow ? (
-        <div>
-            <ShowBlock />
-        </div>
+    return showId ? (
+        <>
+            {loading ? <h1>Loading</h1> : null}
+            <ShowBlock/>
+        </>
     ) : (
         <h1>Select something show</h1>
     );
