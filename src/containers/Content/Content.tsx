@@ -3,7 +3,7 @@ import {useCallback, useEffect} from "react";
 import {useAppDispatch, useAppSelector} from "../../app/hooks";
 import {getCurrentShow} from "./currentShowThunk";
 import ShowBlock from "../../components/ShowBlock/ShowBlock";
-import {selectLoading} from "../../store/searchSlice";
+import {selectLoading, updateShows} from "../../store/searchSlice";
 
 const Content = () => {
     const {showId} = useParams();
@@ -13,6 +13,7 @@ const Content = () => {
     const getShow = useCallback(async () => {
         if (showId !== undefined) {
             await dispatch(getCurrentShow(showId));
+            dispatch(updateShows([]));
         }
     }, [showId, dispatch]);
 

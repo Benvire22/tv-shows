@@ -1,8 +1,7 @@
 
 .ShowBlock {
-    width: 1280px;
     display: flex;
-    border: 1px solid red;
+    border: 2px solid #1f4159;
     padding: 20px 30px;
     margin: 40px auto;
     gap: 40px;
@@ -20,13 +19,13 @@
 
 .Show-info {
     width: 70%;
-    border-left: 1px solid red;
+    border-left: 1px solid #1f4159;
     padding-left: 40px;
 }
 
 .Show-info-top {
     width: 100%;
-    border-bottom: 1px solid red;
+    border-bottom: 2px solid #1f4159;
     margin-bottom: 20px;
 }
 
@@ -47,7 +46,7 @@
 }
 
 .Show-info-content {
-    border-bottom: 1px solid red;
+    border-bottom: 2px solid #1f4159;
 }
 
 .Show-language {

@@ -3,6 +3,7 @@ import {changeInput, selectShows, selectValue} from "../../store/searchSlice";
 import React from "react";
 import {getInfo} from "./searchThunks";
 import {Link} from "react-router-dom";
+import "./SearchForm.css";
 
 const SearchForm = () => {
     const searchValue = useAppSelector(selectValue);
@@ -15,12 +16,19 @@ const SearchForm = () => {
     };
 
     return (
-        <div>
-            <input type="search" value={searchValue} onChange={changeEvent}/>
-            {shows.length > 0  ? (
-                shows.map((show) => (
-                    <Link to={`/shows/${show.show.id}`} key={show.show.id}>{show.show.name}</Link>
-                ))
+        <div className="SearchForm">
+            <input type="search" className="SearchForm-field" value={searchValue} onChange={changeEvent}
+                   placeholder="Enter show name"/>
+            {shows.length > 0 ? (
+                <ul className="autocomplete">
+                    {
+                        shows.map((show) => (
+                            <li key={show.show.id}>
+                                <Link className="autocomplete-item" to={`/shows/${show.show.id}`}>{show.show.name}</Link>
+                            </li>
+                        ))
+                    }
+                </ul>
             ) : null}
         </div>
     );

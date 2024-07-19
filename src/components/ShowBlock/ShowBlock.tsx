@@ -13,7 +13,7 @@ const ShowBlock = () => {
             <div className="Show-info">
                 <div className="Show-info-top">
                     <h1 className="Show-title">Title: {show.name}</h1>
-                    <p className="Show-rating">Rating: <strong>{show.rating.average}</strong></p>
+                    <p className="Show-rating">Rating: <strong>{show.rating.average || 'unknown'}</strong></p>
                     <p className="Show-period"><strong>Period:</strong> {show.premiered} - {show.ended}</p>
                 </div>
                 <div className="Show-info-content">

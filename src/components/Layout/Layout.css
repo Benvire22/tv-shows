@@ -1,0 +1,14 @@
+.header {
+    background: #2f3481;
+    padding: 50px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.brand-link {
+    font-size: 25px;
+    color: #fbf9f9;
+}
