@@ -1,69 +1,69 @@
 
 .ShowBlock {
-    display: flex;
-    border: 2px solid #1f4159;
-    padding: 20px 30px;
-    margin: 40px auto;
-    gap: 40px;
+  display: flex;
+  border: 2px solid #1f4159;
+  padding: 20px 30px;
+  margin: 40px auto;
+  gap: 40px;
 }
 
 .show-image {
-    width: 30%;
+  width: 30%;
 }
 
 .show-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .Show-info {
-    width: 70%;
-    border-left: 1px solid #1f4159;
-    padding-left: 40px;
+  width: 70%;
+  border-left: 1px solid #1f4159;
+  padding-left: 40px;
 }
 
 .Show-info-top {
-    width: 100%;
-    border-bottom: 2px solid #1f4159;
-    margin-bottom: 20px;
+  width: 100%;
+  border-bottom: 2px solid #1f4159;
+  margin-bottom: 20px;
 }
 
 .Show-title {
-    font-size: 45px;
-    margin-top: 0;
-    color: #504c4c;
+  font-size: 45px;
+  margin-top: 0;
+  color: #504c4c;
 }
 
 .Show-rating {
-    color: #4b4e7f;
-    font-size: 25px;
+  color: #4b4e7f;
+  font-size: 25px;
 }
 
 .Show-period {
-    font-size: 20px;
-    color: #504c4c;
+  font-size: 20px;
+  color: #504c4c;
 }
 
 .Show-info-content {
-    border-bottom: 2px solid #1f4159;
+  border-bottom: 2px solid #1f4159;
 }
 
 .Show-language {
-    color: #373b68;
-    font-size: 22px;
+  color: #373b68;
+  font-size: 22px;
 }
 
 .Show-genres {
-    font-size: 19px;
+  font-size: 19px;
 }
 
 .Show-weight {
-    font-size: 20px;
-    color: #302c2c;
+  font-size: 20px;
+  color: #302c2c;
 }
 
 .Show-runtime {
-    font-size: 20px;
-    color: #302c2c;
+  font-size: 20px;
+  color: #302c2c;
 }
